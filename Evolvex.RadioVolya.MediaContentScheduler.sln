@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{426BE57D-100A-4AFB-9717-86BCE7520DE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataServices", "DataServices", "{9DA72598-109D-4E93-939A-05AA189E77B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{2501AC9B-DF9F-4091-B8BE-06DD67EA7EBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Analogs", "Analogs", "{7DC3A5A5-1502-4D36-9371-83B4829D0D8A}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\Analogs\DEP-DJPROEE-EN-LQ-10.pdf = Docs\Analogs\DEP-DJPROEE-EN-LQ-10.pdf
+		Docs\Analogs\DjProEnterprise_EN_11.0.pdf = Docs\Analogs\DjProEnterprise_EN_11.0.pdf
+		Docs\Analogs\urls.txt = Docs\Analogs\urls.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{707D6025-9A2D-4CB6-A200-D3305F349F62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{76316E10-BAAB-4FC4-83F5-3A7A373ABAB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolvex.RadioVolya.MediaContentScheduler", "Evolvex.RadioVolya.MediaContentScheduler\Evolvex.RadioVolya.MediaContentScheduler.csproj", "{34DC2B9B-81E0-4B2C-B2CE-25508AD51839}"
+EndProject
+Project("{C8D11400-126E-41CD-887F-60BD40844F9E}") = "Evolvex.RadioVolya.MusicDB", "DataServices\DB\Evolvex.RadioVolya.MusicDB\Evolvex.RadioVolya.MusicDB.dbproj", "{67CBC824-A49E-4E9B-A947-360F3DFE65C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolvex.RadioVolya.Tests", "Evolvex.RadioVolya.Tests\Evolvex.RadioVolya.Tests.csproj", "{A8A96BE3-5373-4FBF-9EB5-6B23BAB0F348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolvex.RadioVolya.DALCore", "Evolvex.RadioVolya.DALCore\Evolvex.RadioVolya.DALCore.csproj", "{E1A16368-1574-450B-BE44-C039A58C11E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34DC2B9B-81E0-4B2C-B2CE-25508AD51839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DC2B9B-81E0-4B2C-B2CE-25508AD51839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34DC2B9B-81E0-4B2C-B2CE-25508AD51839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34DC2B9B-81E0-4B2C-B2CE-25508AD51839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8A96BE3-5373-4FBF-9EB5-6B23BAB0F348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8A96BE3-5373-4FBF-9EB5-6B23BAB0F348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8A96BE3-5373-4FBF-9EB5-6B23BAB0F348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8A96BE3-5373-4FBF-9EB5-6B23BAB0F348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A16368-1574-450B-BE44-C039A58C11E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A16368-1574-450B-BE44-C039A58C11E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A16368-1574-450B-BE44-C039A58C11E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A16368-1574-450B-BE44-C039A58C11E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{426BE57D-100A-4AFB-9717-86BCE7520DE7} = {9DA72598-109D-4E93-939A-05AA189E77B9}
+		{76316E10-BAAB-4FC4-83F5-3A7A373ABAB4} = {9DA72598-109D-4E93-939A-05AA189E77B9}
+		{67CBC824-A49E-4E9B-A947-360F3DFE65C3} = {426BE57D-100A-4AFB-9717-86BCE7520DE7}
+		{7DC3A5A5-1502-4D36-9371-83B4829D0D8A} = {2501AC9B-DF9F-4091-B8BE-06DD67EA7EBF}
+		{A8A96BE3-5373-4FBF-9EB5-6B23BAB0F348} = {707D6025-9A2D-4CB6-A200-D3305F349F62}
+		{E1A16368-1574-450B-BE44-C039A58C11E5} = {76316E10-BAAB-4FC4-83F5-3A7A373ABAB4}
+	EndGlobalSection
+EndGlobal

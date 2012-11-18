@@ -1,0 +1,4 @@
+DBRefFolders found in your dbp file
+Connect String: server=localhost;User Id=root;database=radiomusiclib
+Provider: {C6882346-E592-4DA5-80BA-D2EADCDA0359}
+
