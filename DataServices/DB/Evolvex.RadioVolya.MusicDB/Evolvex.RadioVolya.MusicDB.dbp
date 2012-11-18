@@ -1,0 +1,21 @@
+# Microsoft Developer Studio Project File - Database Project
+Begin DataProject = "Evolvex.RadioVolya.MusicDB"
+   MSDTVersion = "80"
+   DefDBRef = "radiomusiclib_local"
+   Begin Folder = "Change Scripts"
+   End
+   Begin Folder = "Create Scripts"
+      Script = "CreatedDB.sql"
+      Script = "RadioVolya.DDL.PG.sql"
+      Script = "RadioVolya.DDL.sql"
+   End
+   Begin DBRefFolder = "Database References"
+      Begin DBRefNode = "radiomusiclib_local"
+         ConnectStr = "server=localhost;User Id=root;database=radiomusiclib"
+         Provider = "{C6882346-E592-4DA5-80BA-D2EADCDA0359}"
+         Colorizer = 65536
+      End
+   End
+   Begin Folder = "Queries"
+   End
+End

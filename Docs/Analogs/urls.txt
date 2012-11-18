@@ -1,0 +1,23 @@
+Music Director http://radio.about.com/library/bldef-21.htm
+Find, Listen, or Record Internet Radio Stations - or Create Your Own http://radio.about.com/od/listentoradioonline/u/InternetRadioPath.htm
+StationPlaylist Marries Studio, Creator http://www.rwonline.com/article/stationplaylist-marries-studio-creator/17921
+http://profi.org.ua/profes/muz_red.shtml
+http://en.wikipedia.org/wiki/Radio_Computing_Services
+http://en.wikipedia.org/wiki/Music_scheduling_system
+http://en.wikipedia.org/wiki/Scheduling_%28broadcasting%29
+http://en.wikipedia.org/wiki/Broadcast_license
+
+Radio tools manufacturers:
+http://www.rcsworks.com/en/
+
+History of broad-casting:
+The Broadcast Century and Beyond, 5th Edition http://techbus.safaribooksonline.com/book/-/9780240812366/chapter-1-in-the-beginning/the_ancients_to_the_21st_centu#X2ludGVybmFsX0ZsYXNoUmVhZGVyP3htbGlkPTk3ODAyNDA4MTIzNjYvMzEy
+
+How to create a radio:
+Beyond Powerful Radio, 2nd Edition http://techbus.safaribooksonline.com/book/-/9780240522241
+
+
+Tech:
+ BPM measurement automation:
+  Extracting Tempo/Timing From A Recording http://www.soundonsound.com/sos/sep03/articles/protoolsnotes.htm
+  How to Figure Out a Song's Tempo http://www.ehow.com/how_12074716_figure-out-songs-tempo.html //using conventional metronom
