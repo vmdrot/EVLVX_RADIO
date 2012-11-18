@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolvex.RadioVolya.Tests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolvex.RadioVolya.DALCore", "Evolvex.RadioVolya.DALCore\Evolvex.RadioVolya.DALCore.csproj", "{E1A16368-1574-450B-BE44-C039A58C11E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolvex.RadioVolya.GenericDAL", "Evolvex.RadioVolya.GenericDAL\Evolvex.RadioVolya.GenericDAL.csproj", "{7D73767D-9A9F-492C-AA4C-594E5E627209}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,6 +48,10 @@ Global
 		{E1A16368-1574-450B-BE44-C039A58C11E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1A16368-1574-450B-BE44-C039A58C11E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1A16368-1574-450B-BE44-C039A58C11E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D73767D-9A9F-492C-AA4C-594E5E627209}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D73767D-9A9F-492C-AA4C-594E5E627209}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D73767D-9A9F-492C-AA4C-594E5E627209}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D73767D-9A9F-492C-AA4C-594E5E627209}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,5 +63,6 @@ Global
 		{7DC3A5A5-1502-4D36-9371-83B4829D0D8A} = {2501AC9B-DF9F-4091-B8BE-06DD67EA7EBF}
 		{A8A96BE3-5373-4FBF-9EB5-6B23BAB0F348} = {707D6025-9A2D-4CB6-A200-D3305F349F62}
 		{E1A16368-1574-450B-BE44-C039A58C11E5} = {76316E10-BAAB-4FC4-83F5-3A7A373ABAB4}
+		{7D73767D-9A9F-492C-AA4C-594E5E627209} = {76316E10-BAAB-4FC4-83F5-3A7A373ABAB4}
 	EndGlobalSection
 EndGlobal
