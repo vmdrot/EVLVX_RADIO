@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Evolvex.RadioVolya.GenericDAL.Enums;
 
 namespace Evolvex.RadioVolya.GenericDAL.Interfaces
 {
@@ -9,9 +10,13 @@ namespace Evolvex.RadioVolya.GenericDAL.Interfaces
     {
         int ID { get; set; }
         int Title { get; set; }
+        TrackKind Kind { get; set; }
         IList<IArtistInfo> Artists { get; set; }
         IList<IGenre> Genres { get; set; }
-
-
+        IList<IMood> Moods { get; set; }
+        int LCID { get; set; }
+        string LanguageCode { get; }
+        int BPM { get; set; }
+        int Duration { get; set; }
     }
 }
