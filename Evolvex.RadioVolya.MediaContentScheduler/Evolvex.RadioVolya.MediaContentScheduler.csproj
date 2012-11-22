@@ -92,6 +92,12 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Evolvex.RadioVolya.GenericDAL\Evolvex.RadioVolya.GenericDAL.csproj">
+      <Project>{7D73767D-9A9F-492C-AA4C-594E5E627209}</Project>
+      <Name>Evolvex.RadioVolya.GenericDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -44,6 +44,7 @@
     <Compile Include="Interfaces\IDataAccessFactory.cs" />
     <Compile Include="Interfaces\IGenre.cs" />
     <Compile Include="Interfaces\IMood.cs" />
+    <Compile Include="Interfaces\IRandomTrackDispenser.cs" />
     <Compile Include="Interfaces\ITrackInfo.cs" />
     <Compile Include="Interfaces\ITrackScheduleRetriever.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -144,7 +144,12 @@
     <NotInBuild Include="Connections.txt" />
     <NotInBuild Include="Create Scripts\CreatedDB.sql" />
     <NotInBuild Include="Create Scripts\RadioVolya.DDL.PG.sql" />
-    <NotInBuild Include="Create Scripts\RadioVolya.DDL.sql" />
+    <NotInBuild Include="Create Scripts\RadioVolya.DDL.My.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="Create Scripts\RadioVolya.DDL.MS.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
   </ItemGroup>
   <ItemGroup>
     <BuildContributorArgument Include="OutDir=$(OutDir)" />
