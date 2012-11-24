@@ -1,6 +1,4 @@
-﻿CREATE SCHEMA radiomusiclib AUTHORIZATION dbo;
-
-CREATE TABLE radiomusiclib.tbl_ref_music_genre
+﻿CREATE TABLE radiomusiclib.tbl_ref_music_genre
 (
 	genre_id INT IDENTITY(1,1) PRIMARY KEY,
 	genre_cd VARCHAR(64) NOT NULL UNIQUE,
@@ -68,14 +66,13 @@ CREATE TABLE radiomusiclib.tbl_artist
 CREATE TABLE radiomusiclib.tbl_track
 (
 	track_id INT IDENTITY(1,1) PRIMARY KEY,
-	track_nm VARCHAR(128) NOT NULL,
+	track_nm NVARCHAR(128) NOT NULL,
 	album_nm NVARCHAR(128),
 	file_path NVARCHAR(255),
-	genre_id INT,
 	bitrate INT,
 	file_size INT,
-	release_dttm DATE,
-	length INT,
+	release_year INT,
+	duration INT,
 	bpm INT
 );
 
@@ -159,7 +156,7 @@ CREATE TABLE radiomusiclib.tbl_schedule_rule
 	rule_def NTEXT,
 	valid_since DATETIME,
 	valid_till DATETIME,
-	enabled BIT DEFAULT 1
+	is_enabled BIT DEFAULT 1
 );
  
  
