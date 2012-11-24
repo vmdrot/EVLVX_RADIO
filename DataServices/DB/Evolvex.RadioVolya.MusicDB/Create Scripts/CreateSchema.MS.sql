@@ -1,0 +1,1 @@
+﻿CREATE SCHEMA radiomusiclib AUTHORIZATION dbo;
