@@ -1,4 +1,5 @@
-﻿CREATE TABLE radiomusiclib.tbl_ref_music_genre
+﻿USE RadioMusicLib;
+CREATE TABLE radiomusiclib.tbl_ref_music_genre
 (
 	genre_id INT IDENTITY(1,1) PRIMARY KEY,
 	genre_cd VARCHAR(64) NOT NULL UNIQUE,
@@ -16,8 +17,8 @@ CREATE TABLE radiomusiclib.tbl_tag_mm_date
 (
 	tag_dttm_id INT IDENTITY(1,1) PRIMARY KEY,
 	tag_id INT NOT NULL,
-	start_dttm DATE NOT NULL,
-	end_dttm DATE NOT NULL,
+	start_dttm DATETIME NOT NULL,
+	end_dttm DATETIME NOT NULL,
 	UNIQUE(tag_id, start_dttm, end_dttm)
 );
 -- http://en.wikipedia.org/wiki/Tempo#Italian_tempo_markings
@@ -58,8 +59,8 @@ CREATE TABLE radiomusiclib.tbl_artist
 	artist_id INT IDENTITY(1,1) PRIMARY KEY,
 	artist_nm VARCHAR(128) NOT NULL UNIQUE,
 	country_id INT,
-	birth_dttm DATE,
-	departed_dttm DATE,
+	birth_dttm DATETIME,
+	departed_dttm DATETIME,
 	notes NTEXT
 );
 
@@ -73,7 +74,8 @@ CREATE TABLE radiomusiclib.tbl_track
 	file_size INT,
 	release_year INT,
 	duration INT,
-	bpm INT
+	bpm INT,
+	lyrics NTEXT
 );
 
 CREATE TABLE radiomusiclib.tbl_track_mm_artist
@@ -144,8 +146,8 @@ CREATE TABLE radiomusiclib.tbl_schedule_block
 (
 	block_id INT IDENTITY(1,1) PRIMARY KEY,
 	block_nm NVARCHAR(128) NOT NULL UNIQUE,
-	start_time TIME NOT NULL UNIQUE,
-	end_time TIME NOT NULL UNIQUE
+	start_time DATETIME NOT NULL UNIQUE,
+	end_time DATETIME NOT NULL UNIQUE
 );
 
 CREATE TABLE radiomusiclib.tbl_schedule_rule
@@ -158,5 +160,3 @@ CREATE TABLE radiomusiclib.tbl_schedule_rule
 	valid_till DATETIME,
 	is_enabled BIT DEFAULT 1
 );
- 
- 

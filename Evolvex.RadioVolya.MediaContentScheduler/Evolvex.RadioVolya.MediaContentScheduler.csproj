@@ -93,6 +93,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Evolvex.RadioVolya.Core\Evolvex.RadioVolya.Core.csproj">
+      <Project>{BC0E5EDB-C38C-48D9-BF4F-BEA00E6173BE}</Project>
+      <Name>Evolvex.RadioVolya.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Evolvex.RadioVolya.DALCore\Evolvex.RadioVolya.DALCore.csproj">
+      <Project>{E1A16368-1574-450B-BE44-C039A58C11E5}</Project>
+      <Name>Evolvex.RadioVolya.DALCore</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Evolvex.RadioVolya.GenericDAL\Evolvex.RadioVolya.GenericDAL.csproj">
       <Project>{7D73767D-9A9F-492C-AA4C-594E5E627209}</Project>
       <Name>Evolvex.RadioVolya.GenericDAL</Name>
