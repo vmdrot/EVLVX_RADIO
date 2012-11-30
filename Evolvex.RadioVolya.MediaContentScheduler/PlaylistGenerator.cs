@@ -8,7 +8,7 @@ using Evolvex.RadioVolya.Core.DIServiceContracts;
 
 namespace Evolvex.RadioVolya.MediaContentScheduler
 {
-    public class PlaylistGenerator
+    public class PlaylistGenerator : IPlaylistGenerator
     {
         #region field(s)
         private int _channelId;

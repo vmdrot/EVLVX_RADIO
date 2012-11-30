@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DIServiceContracts\IPlayListGenerationParams.cs" />
+    <Compile Include="DIServiceContracts\IPlaylistGenerator.cs" />
     <Compile Include="DIServiceContracts\IPlayListRulesChecker.cs" />
     <Compile Include="DIServiceContracts\IRandomTrackDispenser.cs" />
     <Compile Include="DIServiceContracts\ITrackInfoRetriever.cs" />
