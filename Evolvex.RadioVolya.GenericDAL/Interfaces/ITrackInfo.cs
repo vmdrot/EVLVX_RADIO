@@ -14,9 +14,10 @@ namespace Evolvex.RadioVolya.GenericDAL.Interfaces
         IList<IArtistInfo> Artists { get; set; }
         IList<IGenre> Genres { get; set; }
         IList<IMood> Moods { get; set; }
+        IList<ITag> Tags { get; set; }
         int LCID { get; set; }
         string LanguageCode { get; }
         int BPM { get; set; }
-        int Duration { get; set; }
+        TimeSpan Duration { get; set; }
     }
 }

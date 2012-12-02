@@ -32,6 +32,12 @@ namespace Evolvex.RadioVolya.Tests.TagLibSharpTests
             
             Console.WriteLine(TagToString(tag1));
             Console.WriteLine(TagToString(tag2));
+            Console.WriteLine(PropertiesToString(mp3file.Properties));
+        }
+
+        private string PropertiesToString(TagLib.Properties props)
+        {
+            return String.Format("AudioBitrate: {0}, AudioChannels: {1}, AudioSampleRate: {2}, BitsPerSample: {3}, Description: {4}, Duration: {5}", props.AudioBitrate, props.AudioChannels, props.AudioSampleRate, props.BitsPerSample, props.Description, props.Duration);
         }
 
         private string TagToString(TagLib.Tag tag)
