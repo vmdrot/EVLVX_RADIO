@@ -6,6 +6,13 @@ CREATE TABLE radiomusiclib.tbl_ref_music_genre
 	genre_nm NVARCHAR(128) NOT NULL UNIQUE
 );
 
+CREATE TABLE radiomusiclib.tbl_track_kind
+(
+	track_kind_id INT IDENTITY(1,1) PRIMARY KEY,
+	track_kind_cd VARCHAR(64) NOT NULL UNIQUE,
+	track_kind_nm NVARCHAR(128) NOT NULL UNIQUE
+);
+
 CREATE TABLE radiomusiclib.tbl_tag
 (
 	tag_id INT IDENTITY(1,1) PRIMARY KEY,
@@ -67,13 +74,17 @@ CREATE TABLE radiomusiclib.tbl_artist
 CREATE TABLE radiomusiclib.tbl_track
 (
 	track_id INT IDENTITY(1,1) PRIMARY KEY,
+	track_kind_id INT NOT NULL,
 	track_nm NVARCHAR(128) NOT NULL,
 	album_nm NVARCHAR(128),
 	file_path NVARCHAR(255),
 	bitrate INT,
 	file_size INT,
+	audio_channels TINYINT, 
+	audio_sample_rate INT, 
+	bits_per_sample INT,
 	release_year INT,
-	duration INT,
+	duration DECIMAL(8,3),
 	bpm INT,
 	lyrics NTEXT
 );
