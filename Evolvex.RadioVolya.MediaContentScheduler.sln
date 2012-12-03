@@ -34,6 +34,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implementations", "Implemen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolvex.RadioVolya.YouthChannelSimpleScheduler", "Evolvex.RadioVolya.YouthChannelSimpleScheduler\Evolvex.RadioVolya.YouthChannelSimpleScheduler.csproj", "{37CD6789-6D0F-4A5C-A376-CA74E7CC19DA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PM", "PM", "{3A7F3FC4-EE89-4FFD-8129-85D0E926C01C}"
+	ProjectSection(SolutionItems) = preProject
+		PM\Evolvex.RadioVolya_PMSchedule.mpp = PM\Evolvex.RadioVolya_PMSchedule.mpp
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
