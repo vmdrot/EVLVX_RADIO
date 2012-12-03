@@ -7,6 +7,13 @@ namespace Evolvex.RadioVolya.GenericDAL.Interfaces
 {
     public interface ITrackScheduleRetriever
     {
-        DateTime GetPlayedBeforeTime(int trackId, DateTime beingScheduledAt);
+        DateTime GetTrackPlayedBeforeTime(int trackId, DateTime beingScheduledAt);
+        int GetTrackAbstandTracks(int trackId, DateTime beingScheduledAt);
+
+        DateTime GetArtistPlayedBeforeTime(int artistId, DateTime beingScheduledAt);
+        int GetArtistAbstandTracks(int artistId, DateTime beingScheduledAt);
+
+        DateTime GetLangPlayedBeforeTime(int lcid, DateTime beingScheduledAt);
+        int GetLangAbstandTracks(int lcid, DateTime beingScheduledAt);
     }
 }
