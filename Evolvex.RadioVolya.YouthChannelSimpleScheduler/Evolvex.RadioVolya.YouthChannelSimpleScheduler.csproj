@@ -46,6 +46,8 @@
     <Compile Include="Impls\Basic\BasicChannelGenerator.cs" />
     <Compile Include="Impls\Basic\DefaultRandomTrackDispenser.cs" />
     <Compile Include="Impls\Basic\RandomTracksGeneratorBase.cs" />
+    <Compile Include="Impls\Flushers\IceCastPlaylistFlusher.cs" />
+    <Compile Include="Impls\Flushers\M3UPlayListFlusher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Impls\YouthChannel\YouthChannelGenerator.cs" />
   </ItemGroup>

@@ -16,8 +16,11 @@ namespace Evolvex.RadioVolya.YouthChannelSimpleScheduler.Impls.Basic
         protected ITrackInfoRetriever _trackRetriever;
         protected ITrackScheduleRetriever _trackScheduleRetriever;
         protected int _cumulativeLength = 0;
+        //protected int _lastTrackIndex = -1; //todo
         protected TimeSpan _cumulativeDuration = new TimeSpan(0, 0, 0, 0);
         protected List<ITrackInfo> _rslt;
+        protected DateTime _airStart;
+        protected DateTime _airEnd;
         #endregion
 
         #region cctor(s)
@@ -73,21 +76,75 @@ namespace Evolvex.RadioVolya.YouthChannelSimpleScheduler.Impls.Basic
         {
             if (MinSameLCIDAbstand <= 0)
                 return true;
-            throw new NotImplementedException();
+            int mainLCID = ti.LCID;
+            int abstand = int.MaxValue;
+            int localIndex = FindLastSameLCIDInCurrentList(mainLCID);
+            if (localIndex != -1)
+                abstand = _cumulativeLength - localIndex;
+            else
+                abstand = this._trackScheduleRetriever.GetLangAbstandTracks(mainLCID, this._airStart) + _cumulativeLength;
+            return (abstand >= MinSameLCIDAbstand);
         }
 
         protected bool CheckSameTrackAbstand(ITrackInfo ti)
         {
             if (MinSameTrackAbstand <= 0)
                 return true;
-            throw new NotImplementedException();
+            int abstand = int.MaxValue;
+            int localIndex = FindLastSameTrackInCurrentList(ti.ID);
+            if (localIndex != -1)
+                abstand = _cumulativeLength - localIndex;
+            else
+                abstand = this._trackScheduleRetriever.GetTrackAbstandTracks(ti.ID, this._airStart) + _cumulativeLength;
+            return (abstand >= MinSameTrackAbstand);
         }
+
 
         protected bool CheckSameArtistAbstand(ITrackInfo ti)
         {
             if (MinSameArtistAbstand <= 0)
                 return true;
-            throw new NotImplementedException();
+            int mainArtist = ti.Artists[0].ID;
+            int abstand = int.MaxValue;
+            int localIndex = FindLastSameArtistInCurrentList(mainArtist);
+            if (localIndex != -1)
+                abstand = _cumulativeLength - localIndex;
+            else
+                abstand = this._trackScheduleRetriever.GetArtistAbstandTracks(mainArtist, this._airStart) + _cumulativeLength;
+            return (abstand >= MinSameArtistAbstand);
+        }
+
+        private int FindLastSameArtistInCurrentList(int mainArtist)
+        {
+            int rslt = -1;
+            for (int i = 0; i < this._rslt.Count; i++)
+            {
+                if (this._rslt[i].Artists[0].ID == mainArtist)
+                    rslt = i;
+            }
+            return rslt;
+        }
+
+        private int FindLastSameTrackInCurrentList(int trackId)
+        {
+            int rslt = -1;
+            for (int i = 0; i < this._rslt.Count; i++)
+            {
+                if (this._rslt[i].ID == trackId)
+                    rslt = i;
+            }
+            return rslt;
+        }
+
+        private int FindLastSameLCIDInCurrentList(int lcid)
+        {
+            int rslt = -1;
+            for (int i = 0; i < this._rslt.Count; i++)
+            {
+                if (this._rslt[i].LCID == lcid)
+                    rslt = i;
+            }
+            return rslt;
         }
 
         protected bool IsDone()

@@ -19,5 +19,6 @@ namespace Evolvex.RadioVolya.GenericDAL.Interfaces
         string LanguageCode { get; }
         int BPM { get; set; }
         TimeSpan Duration { get; set; }
+        string PhysicalPath { get; set; }
     }
 }

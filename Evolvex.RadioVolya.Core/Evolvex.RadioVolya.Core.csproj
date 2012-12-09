@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DIServiceContracts\IPlayListFlusher.cs" />
     <Compile Include="DIServiceContracts\IPlayListGenerationParams.cs" />
     <Compile Include="DIServiceContracts\IPlaylistGenerator.cs" />
     <Compile Include="DIServiceContracts\IPlayListRulesChecker.cs" />

@@ -41,7 +41,7 @@ namespace Evolvex.RadioVolya.MediaContentScheduler
             while (currentProgress < _params.AirEnd)
             {
                 ITrackInfo track = PickUpNextTrack();
-                currentProgress += new TimeSpan(0, 0, track.Duration);
+                currentProgress += track.Duration;
                 _result.Add(track);
             }
             return _result;
