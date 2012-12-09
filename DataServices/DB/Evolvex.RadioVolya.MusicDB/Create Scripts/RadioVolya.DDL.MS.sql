@@ -133,7 +133,7 @@ CREATE TABLE radiomusiclib.tbl_radio_stream
 (
 	stream_id INT IDENTITY(1,1) PRIMARY KEY,
 	stream_nm NVARCHAR(32) NOT NULL UNIQUE,
-	strea_url VARCHAR(1078),
+	stream_url VARCHAR(1078),
 	stream_descr NVARCHAR(255)
 );
 
