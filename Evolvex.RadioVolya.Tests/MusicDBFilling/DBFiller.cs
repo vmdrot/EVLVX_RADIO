@@ -50,11 +50,22 @@ namespace Evolvex.RadioVolya.Tests.MusicDBFilling
             {
                 const string PARENT_ELEM_NM = "Track";
                 w.WriteStartElement(PARENT_ELEM_NM);
+                w.WriteStartElement("Channels");
+                w.WriteElementString("Channel","target_channel_name_place_holder");
+                w.WriteEndElement();
+                w.WriteStartElement("Artists");
                 if(!String.IsNullOrEmpty(Artist)) w.WriteElementString("Artist", this.Artist);
+                w.WriteEndElement();
                 if(!String.IsNullOrEmpty(Title)) w.WriteElementString("Title", this.Title);
                 if(!String.IsNullOrEmpty(Album)) w.WriteElementString("Album", this.Album);
                 if(Year != 0 && Year != int.MaxValue && Year != int.MinValue) w.WriteElementString("Year", this.Year.ToString());
+                w.WriteStartElement("Genres");
                 if(!String.IsNullOrEmpty(Genre)) w.WriteElementString("Genre", this.Genre);
+                w.WriteEndElement();
+                w.WriteStartElement("Tags");
+                //if (!String.IsNullOrEmpty(Genre)) w.WriteElementString("Genre", this.Genre);
+                w.WriteEndElement();
+
                 if(!String.IsNullOrEmpty(PhysicalPath)) w.WriteElementString("PhysicalPath", this.PhysicalPath);
                 if(!String.IsNullOrEmpty(Comment)) w.WriteElementString("Comment", this.Comment);
                 w.WriteElementString("AudioBitrate", this.AudioBitrate.ToString());
@@ -70,7 +81,9 @@ namespace Evolvex.RadioVolya.Tests.MusicDBFilling
                     langNm = "en";
                     countryNm = "US";
                 }
+                w.WriteStartElement("LCIDs");
                 w.WriteElementString("LCID", langNm);
+                w.WriteEndElement();
                 w.WriteElementString("Country", countryNm);
                 w.WriteElementString("RenameTo", GenerateRenameTo(this.PhysicalPath));
                 w.WriteEndElement();

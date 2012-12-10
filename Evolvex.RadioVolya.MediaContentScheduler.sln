@@ -43,6 +43,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolvex.RadioVolya.DAL", "E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{6B26BAF3-B5B4-4383-9DDD-FAA3216EC824}"
 	ProjectSection(SolutionItems) = preProject
+		Testing\Data\all.xml = Testing\Data\all.xml
 		Testing\Data\all_edited.xml = Testing\Data\all_edited.xml
 	EndProjectSection
 EndProject
