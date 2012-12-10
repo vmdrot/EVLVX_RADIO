@@ -39,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PM", "PM", "{3A7F3FC4-EE89-
 		PM\Evolvex.RadioVolya_PMSchedule.mpp = PM\Evolvex.RadioVolya_PMSchedule.mpp
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolvex.RadioVolya.DAL", "Evolvex.RadioVolya.DAL\Evolvex.RadioVolya.DAL.csproj", "{B25014DE-0C45-4C92-9389-92F659F5A42C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -119,6 +121,16 @@ Global
 		{37CD6789-6D0F-4A5C-A376-CA74E7CC19DA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{37CD6789-6D0F-4A5C-A376-CA74E7CC19DA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{37CD6789-6D0F-4A5C-A376-CA74E7CC19DA}.Release|x86.ActiveCfg = Release|Any CPU
+		{B25014DE-0C45-4C92-9389-92F659F5A42C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25014DE-0C45-4C92-9389-92F659F5A42C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25014DE-0C45-4C92-9389-92F659F5A42C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B25014DE-0C45-4C92-9389-92F659F5A42C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B25014DE-0C45-4C92-9389-92F659F5A42C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B25014DE-0C45-4C92-9389-92F659F5A42C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25014DE-0C45-4C92-9389-92F659F5A42C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25014DE-0C45-4C92-9389-92F659F5A42C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B25014DE-0C45-4C92-9389-92F659F5A42C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B25014DE-0C45-4C92-9389-92F659F5A42C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -131,6 +143,7 @@ Global
 		{A8A96BE3-5373-4FBF-9EB5-6B23BAB0F348} = {707D6025-9A2D-4CB6-A200-D3305F349F62}
 		{E1A16368-1574-450B-BE44-C039A58C11E5} = {76316E10-BAAB-4FC4-83F5-3A7A373ABAB4}
 		{7D73767D-9A9F-492C-AA4C-594E5E627209} = {76316E10-BAAB-4FC4-83F5-3A7A373ABAB4}
+		{B25014DE-0C45-4C92-9389-92F659F5A42C} = {76316E10-BAAB-4FC4-83F5-3A7A373ABAB4}
 		{37CD6789-6D0F-4A5C-A376-CA74E7CC19DA} = {1F41C6BD-54CE-41DE-94D5-783483B4D47D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
