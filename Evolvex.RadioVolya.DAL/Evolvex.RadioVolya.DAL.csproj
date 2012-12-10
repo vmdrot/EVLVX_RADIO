@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Import\TabDelimitedImporter.cs" />
     <Compile Include="Import\XmlImporter.cs" />
+    <Compile Include="ModelsEx\tbl_track.cs" />
     <Compile Include="Models\Mapping\tbl_artistMap.cs" />
     <Compile Include="Models\Mapping\tbl_radio_streamMap.cs" />
     <Compile Include="Models\Mapping\tbl_ref_countryMap.cs" />

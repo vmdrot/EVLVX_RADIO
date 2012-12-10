@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Evolvex.RadioVolya.DAL.Models
 {
-    public class tbl_artist
+    public partial class tbl_artist
     {
         public int artist_id { get; set; }
         public string artist_nm { get; set; }

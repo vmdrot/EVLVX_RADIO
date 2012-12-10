@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Evolvex.RadioVolya.DAL.Models
 {
-    public class tbl_ref_lang
+    public partial class tbl_ref_lang
     {
         public int lcid { get; set; }
         public string ietf_tag { get; set; }
