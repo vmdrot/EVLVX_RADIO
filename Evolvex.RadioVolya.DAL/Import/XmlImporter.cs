@@ -64,15 +64,17 @@ namespace Evolvex.RadioVolya.DAL.Import
         public ITrackInfo ReadTrack(XmlReader xml)
         {
             ITrackInfo rslt = null;
+            string currElement = string.Empty;
             while (xml.Read())
             {
                 switch (xml.NodeType)
                 {
                     case XmlNodeType.Element:
+                        currElement = xml.Name;
                         break;
                     case XmlNodeType.EndElement:
-                        {//todo 
-                        }
+                        if (xml.Name == "Track")
+                            return rslt;
                         break;
                     case XmlNodeType.Text:
                         break;

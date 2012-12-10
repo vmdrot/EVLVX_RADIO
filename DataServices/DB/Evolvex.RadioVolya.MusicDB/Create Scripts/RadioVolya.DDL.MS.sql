@@ -137,6 +137,15 @@ CREATE TABLE radiomusiclib.tbl_radio_stream
 	stream_descr NVARCHAR(255)
 );
 
+CREATE TABLE radiomusiclib.tbl_track_mm_stream
+(
+	track_stream_id INT IDENTITY(1,1) PRIMARY KEY,
+	stream_id INT NOT NULL,
+	track_id INT NOT NULL,
+	assigned_dttm DATETIME NOT NULL,
+	UNIQUE(stream_id, track_id)
+);
+
 CREATE TABLE radiomusiclib.tbl_track_play_history
 (
 	trk_pl_hist_id INT IDENTITY(1,1) PRIMARY KEY,
