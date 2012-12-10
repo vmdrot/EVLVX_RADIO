@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using NUnit.Framework;
 using System.IO;
+using System.Xml;
 
 namespace Evolvex.RadioVolya.Tests.MusicDBFilling
 {
@@ -44,6 +45,47 @@ namespace Evolvex.RadioVolya.Tests.MusicDBFilling
 , Duration
 );
             }
+
+            public void ToXml(XmlWriter w)
+            {
+                const string PARENT_ELEM_NM = "Track";
+                w.WriteStartElement(PARENT_ELEM_NM);
+                if(!String.IsNullOrEmpty(Artist)) w.WriteElementString("Artist", this.Artist);
+                if(!String.IsNullOrEmpty(Title)) w.WriteElementString("Title", this.Title);
+                if(!String.IsNullOrEmpty(Album)) w.WriteElementString("Album", this.Album);
+                if(Year != 0 && Year != int.MaxValue && Year != int.MinValue) w.WriteElementString("Year", this.Year.ToString());
+                if(!String.IsNullOrEmpty(Genre)) w.WriteElementString("Genre", this.Genre);
+                if(!String.IsNullOrEmpty(PhysicalPath)) w.WriteElementString("PhysicalPath", this.PhysicalPath);
+                if(!String.IsNullOrEmpty(Comment)) w.WriteElementString("Comment", this.Comment);
+                w.WriteElementString("AudioBitrate", this.AudioBitrate.ToString());
+                w.WriteElementString("AudioChannels", this.AudioChannels.ToString());
+                w.WriteElementString("AudioSampleRate", this.AudioSampleRate.ToString());
+                if (BitsPerSample != 0) w.WriteElementString("BitsPerSample", this.BitsPerSample.ToString());
+                if(!String.IsNullOrEmpty(Description)) w.WriteElementString("Description", this.Description);
+                w.WriteElementString("Duration", this.Duration.ToString());
+                string langNm = "uk";
+                string countryNm = "UA";
+                if (PhysicalPath.IndexOf("\\UA\\") == -1)
+                {
+                    langNm = "en";
+                    countryNm = "US";
+                }
+                w.WriteElementString("LCID", langNm);
+                w.WriteElementString("Country", countryNm);
+                w.WriteElementString("RenameTo", GenerateRenameTo(this.PhysicalPath));
+                w.WriteEndElement();
+            }
+
+            private string GenerateRenameTo(string oldPath)
+            {
+                String dir = Path.GetDirectoryName(oldPath);
+                string filename = Path.GetFileName(oldPath);
+                if (filename.IndexOf(' ') != -1)
+                    filename = filename.Replace(' ', '_');
+                filename = filename.Replace("&", "and");
+                return Path.Combine(dir, filename);
+
+            }
         }
         [Test]
         public void TraverseFolders()
@@ -58,13 +100,32 @@ namespace Evolvex.RadioVolya.Tests.MusicDBFilling
             }
 
             Console.WriteLine("infos.Count = {0}", infos.Count);
-            using (StreamWriter sw = new StreamWriter(@"D:\home\vmdrot\HaErez\RadioVolya\Sounds\all.csv",false, Encoding.Unicode))
+            //using (StreamWriter sw = new StreamWriter(@"D:\home\vmdrot\HaErez\RadioVolya\Sounds\all.csv",false, Encoding.Unicode))
+            //{
+            //    //Console.WriteLine("Title,Album,Year,Genre,PhysicalPath,Comment,AudioBitrate,AudioChannels,AudioSampleRate,BitsPerSample,Description,Duration");
+            //    sw.WriteLine("Title,Album,Year,Genre,PhysicalPath,Comment,AudioBitrate,AudioChannels,AudioSampleRate,BitsPerSample,Description,Duration");
+            //    foreach (MP3info info in infos)
+            //        sw.WriteLine(info.ToString());
+            //        //Console.WriteLine(info.ToString());
+            //}
+
+            using (StreamWriter sw = new StreamWriter(@"D:\home\vmdrot\HaErez\RadioVolya\Sounds\all.xml", false, Encoding.UTF8))
             {
-                //Console.WriteLine("Title,Album,Year,Genre,PhysicalPath,Comment,AudioBitrate,AudioChannels,AudioSampleRate,BitsPerSample,Description,Duration");
-                sw.WriteLine("Title,Album,Year,Genre,PhysicalPath,Comment,AudioBitrate,AudioChannels,AudioSampleRate,BitsPerSample,Description,Duration");
-                foreach (MP3info info in infos)
-                    sw.WriteLine(info.ToString());
-                    //Console.WriteLine(info.ToString());
+                
+                XmlWriterSettings settings = new XmlWriterSettings();
+                settings.Encoding = Encoding.UTF8;
+                //settings.Encoding = target.;
+                settings.Indent = true;
+                settings.OmitXmlDeclaration = false;
+                const string PARENT_ELEM_NM = "Tracks";
+
+                using (XmlWriter w = XmlWriter.Create(sw.BaseStream, settings))
+                {
+                    w.WriteStartElement(PARENT_ELEM_NM);
+                    foreach (MP3info info in infos)
+                        info.ToXml(w);
+                    w.WriteEndElement();
+                }
             }
         }
 
@@ -95,7 +156,7 @@ namespace Evolvex.RadioVolya.Tests.MusicDBFilling
             }
             catch (TagLib.CorruptFileException cfex)
             {
-                return null;
+                return new MP3info() { PhysicalPath = path};
             }
         }
 
