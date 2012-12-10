@@ -5,13 +5,14 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>a0822fba-e1f2-458a-bd98-9f6aab8fa3bb</ProjectGuid>
+    <ProjectGuid>{B25014DE-0C45-4C92-9389-92F659F5A42C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Evolvex.RadioVolya.DAL</RootNamespace>
     <AssemblyName>Evolvex.RadioVolya.DAL</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,17 +32,64 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Import\TabDelimitedImporter.cs" />
+    <Compile Include="Models\Mapping\tbl_artistMap.cs" />
+    <Compile Include="Models\Mapping\tbl_radio_streamMap.cs" />
+    <Compile Include="Models\Mapping\tbl_ref_countryMap.cs" />
+    <Compile Include="Models\Mapping\tbl_ref_langMap.cs" />
+    <Compile Include="Models\Mapping\tbl_ref_music_genreMap.cs" />
+    <Compile Include="Models\Mapping\tbl_ref_music_moodMap.cs" />
+    <Compile Include="Models\Mapping\tbl_ref_music_tempoMap.cs" />
+    <Compile Include="Models\Mapping\tbl_schedule_blockMap.cs" />
+    <Compile Include="Models\Mapping\tbl_schedule_ruleMap.cs" />
+    <Compile Include="Models\Mapping\tbl_tagMap.cs" />
+    <Compile Include="Models\Mapping\tbl_tag_mm_dateMap.cs" />
+    <Compile Include="Models\Mapping\tbl_trackMap.cs" />
+    <Compile Include="Models\Mapping\tbl_track_mm_artistMap.cs" />
+    <Compile Include="Models\Mapping\tbl_track_mm_genreMap.cs" />
+    <Compile Include="Models\Mapping\tbl_track_mm_langMap.cs" />
+    <Compile Include="Models\Mapping\tbl_track_mm_moodMap.cs" />
+    <Compile Include="Models\Mapping\tbl_track_mm_tagMap.cs" />
+    <Compile Include="Models\Mapping\tbl_track_play_historyMap.cs" />
+    <Compile Include="Models\Mapping\tbl_track_scheduleMap.cs" />
+    <Compile Include="Models\RadioMusicLibContext.cs" />
+    <Compile Include="Models\tbl_artist.cs" />
+    <Compile Include="Models\tbl_radio_stream.cs" />
+    <Compile Include="Models\tbl_ref_country.cs" />
+    <Compile Include="Models\tbl_ref_lang.cs" />
+    <Compile Include="Models\tbl_ref_music_genre.cs" />
+    <Compile Include="Models\tbl_ref_music_mood.cs" />
+    <Compile Include="Models\tbl_ref_music_tempo.cs" />
+    <Compile Include="Models\tbl_schedule_block.cs" />
+    <Compile Include="Models\tbl_schedule_rule.cs" />
+    <Compile Include="Models\tbl_tag.cs" />
+    <Compile Include="Models\tbl_tag_mm_date.cs" />
+    <Compile Include="Models\tbl_track.cs" />
+    <Compile Include="Models\tbl_track_mm_artist.cs" />
+    <Compile Include="Models\tbl_track_mm_genre.cs" />
+    <Compile Include="Models\tbl_track_mm_lang.cs" />
+    <Compile Include="Models\tbl_track_mm_mood.cs" />
+    <Compile Include="Models\tbl_track_mm_tag.cs" />
+    <Compile Include="Models\tbl_track_play_history.cs" />
+    <Compile Include="Models\tbl_track_schedule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
