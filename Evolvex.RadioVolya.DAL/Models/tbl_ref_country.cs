@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Evolvex.RadioVolya.DAL.Models
 {
-    public partial class tbl_ref_country
+    public class tbl_ref_country
     {
         public int country_id { get; set; }
         public string country_cd { get; set; }

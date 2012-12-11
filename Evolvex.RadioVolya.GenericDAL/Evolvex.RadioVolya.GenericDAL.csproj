@@ -44,6 +44,7 @@
     <Compile Include="Interfaces\IDataAccessFactory.cs" />
     <Compile Include="Interfaces\IGenre.cs" />
     <Compile Include="Interfaces\IMood.cs" />
+    <Compile Include="Interfaces\IRadioChannel.cs" />
     <Compile Include="Interfaces\ITag.cs" />
     <Compile Include="Interfaces\ITrackInfo.cs" />
     <Compile Include="Interfaces\ITrackScheduleRetriever.cs" />

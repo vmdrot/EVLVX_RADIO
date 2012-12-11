@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Evolvex.RadioVolya.DAL.Models
 {
-    public partial class tbl_schedule_rule
+    public class tbl_schedule_rule
     {
         public int rule_id { get; set; }
         public int stream_id { get; set; }

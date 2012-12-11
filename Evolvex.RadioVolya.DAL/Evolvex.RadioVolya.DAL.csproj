@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Import\TabDelimitedImporter.cs" />
     <Compile Include="Import\XmlImporter.cs" />
+    <Compile Include="ModelsEx\tbl_artist.cs" />
     <Compile Include="ModelsEx\tbl_track.cs" />
     <Compile Include="Models\Mapping\tbl_artistMap.cs" />
     <Compile Include="Models\Mapping\tbl_radio_streamMap.cs" />
@@ -59,10 +60,12 @@
     <Compile Include="Models\Mapping\tbl_tagMap.cs" />
     <Compile Include="Models\Mapping\tbl_tag_mm_dateMap.cs" />
     <Compile Include="Models\Mapping\tbl_trackMap.cs" />
+    <Compile Include="Models\Mapping\tbl_track_kindMap.cs" />
     <Compile Include="Models\Mapping\tbl_track_mm_artistMap.cs" />
     <Compile Include="Models\Mapping\tbl_track_mm_genreMap.cs" />
     <Compile Include="Models\Mapping\tbl_track_mm_langMap.cs" />
     <Compile Include="Models\Mapping\tbl_track_mm_moodMap.cs" />
+    <Compile Include="Models\Mapping\tbl_track_mm_streamMap.cs" />
     <Compile Include="Models\Mapping\tbl_track_mm_tagMap.cs" />
     <Compile Include="Models\Mapping\tbl_track_play_historyMap.cs" />
     <Compile Include="Models\Mapping\tbl_track_scheduleMap.cs" />
@@ -79,10 +82,12 @@
     <Compile Include="Models\tbl_tag.cs" />
     <Compile Include="Models\tbl_tag_mm_date.cs" />
     <Compile Include="Models\tbl_track.cs" />
+    <Compile Include="Models\tbl_track_kind.cs" />
     <Compile Include="Models\tbl_track_mm_artist.cs" />
     <Compile Include="Models\tbl_track_mm_genre.cs" />
     <Compile Include="Models\tbl_track_mm_lang.cs" />
     <Compile Include="Models\tbl_track_mm_mood.cs" />
+    <Compile Include="Models\tbl_track_mm_stream.cs" />
     <Compile Include="Models\tbl_track_mm_tag.cs" />
     <Compile Include="Models\tbl_track_play_history.cs" />
     <Compile Include="Models\tbl_track_schedule.cs" />
@@ -90,12 +95,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="CodeTemplates\ReverseEngineerCodeFirst\Context.tt" />
+    <None Include="CodeTemplates\ReverseEngineerCodeFirst\Entity.tt" />
+    <None Include="CodeTemplates\ReverseEngineerCodeFirst\Mapping.tt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Evolvex.RadioVolya.GenericDAL\Evolvex.RadioVolya.GenericDAL.csproj">
       <Project>{7D73767D-9A9F-492C-AA4C-594E5E627209}</Project>
       <Name>Evolvex.RadioVolya.GenericDAL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

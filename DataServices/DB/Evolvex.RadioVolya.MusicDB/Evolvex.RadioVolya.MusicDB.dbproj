@@ -153,6 +153,9 @@
     <NotInBuild Include="Create Scripts\CreateSchema.MS.sql">
       <SubType>NotInBuild</SubType>
     </NotInBuild>
+    <NotInBuild Include="Create Scripts\RadioVolya.DropTables.MS.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
   </ItemGroup>
   <ItemGroup>
     <BuildContributorArgument Include="OutDir=$(OutDir)" />

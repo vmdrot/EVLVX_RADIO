@@ -77,6 +77,14 @@ namespace Evolvex.RadioVolya.DAL.Import
                             return rslt;
                         break;
                     case XmlNodeType.Text:
+                        {
+                            switch (currElement)
+                            {
+                                case "Channels":
+                                    rslt.Channels = null;//todo
+                                    break;
+                            }
+                        }
                         break;
 
                     case XmlNodeType.Attribute:
