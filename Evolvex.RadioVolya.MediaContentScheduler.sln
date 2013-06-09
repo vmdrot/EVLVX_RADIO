@@ -45,7 +45,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{6B26BAF3-B
 	ProjectSection(SolutionItems) = preProject
 		Testing\Data\all.xml = Testing\Data\all.xml
 		Testing\Data\all_edited.xml = Testing\Data\all_edited.xml
+		Testing\Data\test_cut.xml = Testing\Data\test_cut.xml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evolvex.RadioVolya.MediaContentScheduler.Tester", "Evolvex.RadioVolya.MediaContentScheduler.Tester\Evolvex.RadioVolya.MediaContentScheduler.Tester.csproj", "{5F92366C-C883-429C-93AA-38A1B133C8A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -137,6 +140,16 @@ Global
 		{B25014DE-0C45-4C92-9389-92F659F5A42C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B25014DE-0C45-4C92-9389-92F659F5A42C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B25014DE-0C45-4C92-9389-92F659F5A42C}.Release|x86.ActiveCfg = Release|Any CPU
+		{5F92366C-C883-429C-93AA-38A1B133C8A7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{5F92366C-C883-429C-93AA-38A1B133C8A7}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{5F92366C-C883-429C-93AA-38A1B133C8A7}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{5F92366C-C883-429C-93AA-38A1B133C8A7}.Debug|x86.ActiveCfg = Debug|x86
+		{5F92366C-C883-429C-93AA-38A1B133C8A7}.Debug|x86.Build.0 = Debug|x86
+		{5F92366C-C883-429C-93AA-38A1B133C8A7}.Release|Any CPU.ActiveCfg = Release|x86
+		{5F92366C-C883-429C-93AA-38A1B133C8A7}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{5F92366C-C883-429C-93AA-38A1B133C8A7}.Release|Mixed Platforms.Build.0 = Release|x86
+		{5F92366C-C883-429C-93AA-38A1B133C8A7}.Release|x86.ActiveCfg = Release|x86
+		{5F92366C-C883-429C-93AA-38A1B133C8A7}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,6 +161,7 @@ Global
 		{7DC3A5A5-1502-4D36-9371-83B4829D0D8A} = {2501AC9B-DF9F-4091-B8BE-06DD67EA7EBF}
 		{A8A96BE3-5373-4FBF-9EB5-6B23BAB0F348} = {707D6025-9A2D-4CB6-A200-D3305F349F62}
 		{6B26BAF3-B5B4-4383-9DDD-FAA3216EC824} = {707D6025-9A2D-4CB6-A200-D3305F349F62}
+		{5F92366C-C883-429C-93AA-38A1B133C8A7} = {707D6025-9A2D-4CB6-A200-D3305F349F62}
 		{E1A16368-1574-450B-BE44-C039A58C11E5} = {76316E10-BAAB-4FC4-83F5-3A7A373ABAB4}
 		{7D73767D-9A9F-492C-AA4C-594E5E627209} = {76316E10-BAAB-4FC4-83F5-3A7A373ABAB4}
 		{B25014DE-0C45-4C92-9389-92F659F5A42C} = {76316E10-BAAB-4FC4-83F5-3A7A373ABAB4}

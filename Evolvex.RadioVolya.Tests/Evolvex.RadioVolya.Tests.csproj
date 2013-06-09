@@ -10,12 +10,13 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Evolvex.RadioVolya.Tests</RootNamespace>
     <AssemblyName>Evolvex.RadioVolya.Tests</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,11 +55,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MusicDBFilling\XmlImporterExTests.cs" />
     <Compile Include="MusicDBFilling\DBFiller.cs" />
+    <Compile Include="MusicDBFilling\XmlImporterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TagLibSharpTests\Basic.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Evolvex.RadioVolya.DAL\Evolvex.RadioVolya.DAL.csproj">
+      <Project>{B25014DE-0C45-4C92-9389-92F659F5A42C}</Project>
+      <Name>Evolvex.RadioVolya.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Evolvex.RadioVolya.GenericDAL\Evolvex.RadioVolya.GenericDAL.csproj">
+      <Project>{7D73767D-9A9F-492C-AA4C-594E5E627209}</Project>
+      <Name>Evolvex.RadioVolya.GenericDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -9,5 +9,6 @@ namespace Evolvex.RadioVolya.GenericDAL.Interfaces
     {
         int ID { get; set; }
         string Name { get; set; }
+        string Country { get; set; }
     }
 }

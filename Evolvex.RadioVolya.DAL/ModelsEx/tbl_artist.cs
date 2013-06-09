@@ -35,6 +35,9 @@ namespace Evolvex.RadioVolya.DAL.Models
             }
         }
 
+        public string Country {get;set;}
+        
+
         #endregion
     }
 }

@@ -1,0 +1,55 @@
+<Tracks>
+  <Track>
+    <Channels>
+      <Channel>target_channel_name_place_holder</Channel>
+    </Channels>
+    <Artists>
+      <Artist>SPACE IBIZA 2003</Artist>
+    </Artists>
+    <Title>TOMAZ VS FILTERHEADZ - SUNSHIN</Title>
+    <Kind>Song</Kind>
+    <Album>MIXED BY RECHE</Album>
+    <Year>2003</Year>
+    <Genres>
+      <Genre>Other</Genre>
+    </Genres>
+    <Tags />
+    <Moods />
+    <PhysicalPath>D:\home\vmdrot\HaErez\RadioVolya\Sounds\Music\World\0216f70704.mp3</PhysicalPath>
+    <AudioBitrate>192</AudioBitrate>
+    <AudioChannels>2</AudioChannels>
+    <AudioSampleRate>44100</AudioSampleRate>
+    <Description>MPEG Version 1 Audio, Layer 3</Description>
+    <Duration>00:05:51.8950000</Duration>
+    <LCIDs>
+      <LCID>en</LCID>
+    </LCIDs>
+    <Country>US</Country>
+    <RenameTo>D:\home\vmdrot\HaErez\RadioVolya\Sounds\Music\World\0216f70704.mp3</RenameTo>
+  </Track>
+  <Track>
+    <Channels>
+      <Channel>target_channel_name_place_holder</Channel>
+    </Channels>
+    <Artists>
+      <Artist>Pet Shop Boys</Artist>
+    </Artists>
+    <Title>Flamboyant</Title>
+    <Kind>Song</Kind>
+    <Genres />
+    <Tags />
+    <Moods />
+    <PhysicalPath>D:\home\vmdrot\HaErez\RadioVolya\Sounds\Music\World\Pet Shop Boys - Flamboyant.mp3</PhysicalPath>
+    <Comment>Downloaded from ProstoPleer.com</Comment>
+    <AudioBitrate>128</AudioBitrate>
+    <AudioChannels>2</AudioChannels>
+    <AudioSampleRate>44100</AudioSampleRate>
+    <Description>MPEG Version 1 Audio, Layer 3 VBR</Description>
+    <Duration>00:03:38.8280000</Duration>
+    <LCIDs>
+      <LCID>en</LCID>
+    </LCIDs>
+    <Country>US</Country>
+    <RenameTo>D:\home\vmdrot\HaErez\RadioVolya\Sounds\Music\World\Pet_Shop_Boys_-_Flamboyant.mp3</RenameTo>
+  </Track>
+</Tracks>
