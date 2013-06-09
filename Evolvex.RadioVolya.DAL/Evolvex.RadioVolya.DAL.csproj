@@ -44,9 +44,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Import\XmlImporterEx.cs" />
     <Compile Include="Import\TabDelimitedImporter.cs" />
     <Compile Include="Import\XmlImporter.cs" />
     <Compile Include="ModelsEx\tbl_artist.cs" />
+    <Compile Include="ModelsEx\tbl_radio_stream.cs" />
+    <Compile Include="ModelsEx\tbl_ref_music_genre.cs" />
+    <Compile Include="ModelsEx\tbl_ref_music_mood.cs" />
+    <Compile Include="ModelsEx\tbl_tag.cs" />
     <Compile Include="ModelsEx\tbl_track.cs" />
     <Compile Include="Models\Mapping\tbl_artistMap.cs" />
     <Compile Include="Models\Mapping\tbl_radio_streamMap.cs" />
