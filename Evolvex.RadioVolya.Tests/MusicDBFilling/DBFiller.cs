@@ -100,6 +100,7 @@ namespace Evolvex.RadioVolya.Tests.MusicDBFilling
 
             }
         }
+
         [Test]
         public void TraverseFolders()
         {
@@ -126,7 +127,7 @@ namespace Evolvex.RadioVolya.Tests.MusicDBFilling
             {
                 
                 XmlWriterSettings settings = new XmlWriterSettings();
-                settings.Encoding = Encoding.UTF8;
+                settings.Encoding = Encoding.Unicode;
                 //settings.Encoding = target.;
                 settings.Indent = true;
                 settings.OmitXmlDeclaration = false;

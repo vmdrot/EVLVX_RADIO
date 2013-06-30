@@ -179,12 +179,19 @@ namespace Evolvex.RadioVolya.DAL.Import
             settings.ConformanceLevel = ConformanceLevel.Auto;
             settings.CheckCharacters = false;
             settings.ValidationFlags = System.Xml.Schema.XmlSchemaValidationFlags.None;
+            settings.ValidationEventHandler += new System.Xml.Schema.ValidationEventHandler(settings_ValidationEventHandler);
+            settings.ValidationType = ValidationType.None;
 
             using (XmlReader r = XmlReader.Create(path, settings))
             {
                 Tracks = Read(r);
                 return true;
             }
+        }
+
+        void settings_ValidationEventHandler(object sender, System.Xml.Schema.ValidationEventArgs e)
+        {
+            int i = 0;
         }
 
         public List<ITrackInfo> Tracks { get; private set; }
