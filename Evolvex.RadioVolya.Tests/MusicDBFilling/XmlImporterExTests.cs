@@ -21,6 +21,14 @@ namespace Evolvex.RadioVolya.Tests.MusicDBFilling
         }
 
         [Test]
+        public void Import_orig()
+        {
+            XmlImporterEx importer = new XmlImporterEx();
+            importer.Import(@"D:\home\vmdrot\DEV\Evolvex.RadioVolya.MediaContentScheduler\Testing\Data\all_orig.xml");
+            PrintRslts(importer.Tracks);
+        }
+
+        [Test]
         public void ImportCut()
         {
             XmlImporterEx importer = new XmlImporterEx();
